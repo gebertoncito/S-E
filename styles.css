@@ -245,8 +245,13 @@ a {text-decoration: none; color: inherit;}
 .tech__ticker::before {left: 0; background: linear-gradient(to right, var(--bg-3), transparent);}
 .tech__ticker::after {right: 0; background: linear-gradient(to left, var(--bg-3), transparent);}
 .tech__ticker-inner {
-    display: flex; width: max-content;
-    animation: ticker 30s linear infinite;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0 5%;
+    animation: none;
 }
 .tech__ticker-inner span {
     display: inline-block;
@@ -257,10 +262,6 @@ a {text-decoration: none; color: inherit;}
     border-radius: 6px;
     padding: 8px 2px; margin: 0 8px;
     white-space: nowrap; letter-spacing: 0.05em;
-}
-@keyframes ticker {
-    0% {transform: translateY(0);}
-    100% {transform: translateX(-50%);}
 }
 
 /*team*/
