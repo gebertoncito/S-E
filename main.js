@@ -98,4 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
      }, {passive: true});
 
+     const gmailBtn = document.querySelector('.btn--gmail');
+     if (gmailBtn) {
+         const isMobile = /Android|iPhone|iPad|iPod/i.text(navigator.userAgent);
+         if(isMobile) {
+             gmailBtn.href = 'googlegmail://co?to=se.tech.solution07@mail.com';
+         }else {
+             gmailBtn.href = 'https://mail.google.com/mail/?view=cm&to=se.tech.solution07@mail.com';
+         }
+     }
 });
