@@ -103,9 +103,9 @@ if (gmailBtn) {
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (isMobile) {
-    gmailBtn.href = 'mailto:se.tech.solution07@mail.com?subject=Consulta%20S%26E%20Tech%20Solutions';
+    gmailBtn.href = 'mailto:se.tech.solitions07@mail.com?subject=Consulta%20S%26E%20Tech%20Solitions';
   } else {
-    gmailBtn.href = 'https://mail.google.com/mail/?view=cm&to=se.tech.solution07@mail.com&su=Consulta%20S%26E%20Tech%20Solutions';
+    gmailBtn.href = 'https://mail.google.com/mail/?view=cm&to=se.tech.solitions07@mail.com&su=Consulta%20S%26E%20Tech%20Solitions';
   }
 }
 });
